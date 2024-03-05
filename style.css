@@ -9,14 +9,18 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to right, #098BE2, #0D354D);
+    background-image: url(imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
-form {
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #05243aa6;
-    width: 80%;
+    width: max(50%, 300px);
     height: 90vh;
     color: white;
     border-radius: 10px;
@@ -27,20 +31,46 @@ fieldset {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75vw;
+    width: max(90%, 250px);
     height: 90%;
     border: 2px solid #128AFF;
 }
 #legenda {
     text-align: center;
+    font-weight: bolder;
     background-color: #128AFF;
     border-radius: 10px;
     padding: 10px;
 }
 #formulario {
-    line-height: 2.3em;
+    display: block;
     padding: 10px;
-    width: 100%;
+    width: max(95% -1em);
+    height: max(100% - 1.2em);
+}
+#formulario > p {
+    padding: 5px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
     height: 100%;
+    width: 100%;
+}
+#btn {
+    background-image: linear-gradient(to right, rgb(27, 27, 212), rgb(2, 2, 56));
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+#btn > input {
+    color: white;
+    border: none;
+    font-weight: bolder;
+}
+#sex {
+    display:inline-flex;
+    padding: 10px;
 }
 
